@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michael Payne | Learning and Development Portfolio</title>
+  <meta name="description" content="Michael Payne is a learning and development professional in Nashville, TN. Take a 4-minute interactive course on the programs he has built and facilitated, the results, and how he designs learning.">
+  <meta name="author" content="Michael Payne">
+
+  <!-- Fonts: Fraunces (headings) and DM Sans (body), from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Tells the styles that JavaScript is on, so the course view loads without a flash -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Structured info about Michael for search engines and AI screening tools.
+       Keep it in sync with the page when facts change. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Payne",
+    "jobTitle": "Learning and Development Professional",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nashville",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    },
+    "email": "mailto:michaeljpayne98@gmail.com",
+    "url": "https://michaeljpayne98.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/michael-payne-trainer"],
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Belmont University" },
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "M.S., Strategic Communication and Organizational Leadership", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Belmont University" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "B.S., Corporate Communication and Public Relations", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Belmont University" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "SHRM Certified Professional (SHRM-CP)", "recognizedBy": { "@type": "Organization", "name": "SHRM" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "Training and Facilitation", "recognizedBy": { "@type": "Organization", "name": "ATD" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "Generative AI for Leaders", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Vanderbilt University" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "Certificate of Non-Profit Leadership", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Belmont University" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "HR Tomorrow Leadership Program", "recognizedBy": { "@type": "Organization", "name": "SHRM Foundation" } }
+    ],
+    "knowsAbout": [
+      "Learning and development", "Instructional design", "Facilitation",
+      "Train-the-trainer programs", "New employee onboarding", "E-learning development",
+      "Needs analysis", "Talent development", "Articulate Storyline 360", "Articulate Rise 360",
+      "Camtasia", "HealthStream LMS", "Oracle HCM", "CultureAmp", "Generative AI"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to the lesson</a>
+
+<!-- ======================================================
+     TOP BAR: course title, menu, progress
+     ====================================================== -->
+<header class="course-bar">
+  <div class="course-bar-inner">
+    <div class="course-bar-top">
+      <h1 class="course-title"><a href="#welcome">Course: Meet Michael Payne</a></h1>
+      <div class="course-tools">
+        <button type="button" class="tool-button" id="view-button" hidden>View as one page</button>
+        <button type="button" class="tool-button" id="menu-button" aria-expanded="false" aria-controls="course-menu" hidden>Menu</button>
+      </div>
+    </div>
+
+    <div class="progress">
+      <p class="progress-label">
+        <span id="progress-module">Module 1 of 6: Welcome</span>
+        <span id="progress-count">Lesson 1 of 12</span>
+      </p>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- MENU: one link per lesson. If you add or rename a lesson, update it here too. -->
+  <nav class="course-menu" id="course-menu" aria-label="Course menu">
+    <h2 class="menu-heading">Course contents</h2>
+    <ol class="menu-modules">
+      <li>
+        <span class="menu-module-name">Module 1: Welcome</span>
+        <ol class="menu-lessons">
+          <li><a href="#welcome">Welcome and objectives</a></li>
+        </ol>
+      </li>
+      <li>
+        <span class="menu-module-name">Module 2: By the numbers</span>
+        <ol class="menu-lessons">
+          <li><a href="#numbers">My impact at a glance</a></li>
+        </ol>
+      </li>
+      <li>
+        <span class="menu-module-name">Module 3: Program case studies</span>
+        <ol class="menu-lessons">
+          <li><a href="#anchors-edge">Anchor's Edge</a></li>
+          <li><a href="#voyage">Vanderbilt Voyage</a></li>
+          <li><a href="#navigator">Dore to Dore Navigator Program</a></li>
+          <li><a href="#polaris">Project Polaris</a></li>
+        </ol>
+      </li>
+      <li>
+        <span class="menu-module-name">Module 4: How I build learning</span>
+        <ol class="menu-lessons">
+          <li><a href="#build-needs">Step 1: Needs analysis</a></li>
+          <li><a href="#build-objectives">Step 2: Learning objectives</a></li>
+          <li><a href="#build-storyboard">Step 3: Storyboard</a></li>
+          <li><a href="#build-lesson">Step 4: The finished build</a></li>
+        </ol>
+      </li>
+      <li>
+        <span class="menu-module-name">Module 5: Knowledge check</span>
+        <ol class="menu-lessons">
+          <li><a href="#knowledge-check">Quiz: how well do you know Michael?</a></li>
+        </ol>
+      </li>
+      <li>
+        <span class="menu-module-name">Module 6: Course completion</span>
+        <ol class="menu-lessons">
+          <li><a href="#complete">Your certificate and how to reach me</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+</header>
+
+
+<main id="main">
+
+  <!-- ====================================================
+       MODULE 1: WELCOME
+       ==================================================== -->
+  <section class="lesson" id="welcome" aria-labelledby="welcome-title"
+           data-module="Module 1 of 6: Welcome" data-title="Welcome">
+
+    <div class="welcome-top">
+      <div>
+        <p class="eyebrow">Module 1 &middot; About 4 minutes</p>
+        <h2 id="welcome-title">Welcome in. <span class="highlight">Let's learn about Michael.</span></h2>
+        <p class="lead">A short course for busy hiring managers. Finish in about 4 minutes, or stay for the deep dives.</p>
+        <p><a class="button" href="#numbers">Start the course</a></p>
+      </div>
+
+      <div class="card card-dark">
+        <p class="card-heading">By the end of this course, you'll be able to:</p>
+        <ol class="objectives">
+          <li>Describe who Michael is and how he approaches learning and development.</li>
+          <li>Identify the programs he has built, led and facilitated.</li>
+          <li>Explain the results those programs delivered.</li>
+        </ol>
+      </div>
+    </div>
+
+    <p class="how-it-works">
+      <strong>How this course works:</strong> use Next and Back at the bottom of the screen,
+      or open the Menu to jump to any lesson. Short on time? Choose "View as one page" at the top and skim.
+    </p>
+
+    <h3>Meet your instructor</h3>
+    <!-- EDIT ME: your short bio -->
+    <p>
+      I'm Michael Payne, a learning and development professional based in Nashville, TN.
+      Most recently, I was the Assistant Learning, Talent and Capabilities Strategist at
+      Vanderbilt University.
+    </p>
+    <p>
+      At Vanderbilt, I built e-learning in Articulate, facilitated Vanderbilt Voyage for new
+      employees, and ran Anchor's Edge, a monthly professional development series. Before
+      that, I trained recruiters and produced learning events at HCA Healthcare.
+    </p>
+    <p>
+      I hold an M.S. in Strategic Communication and Organizational Leadership from Belmont
+      University and the SHRM-CP. I'm open to relocation and remote roles.
+    </p>
+
+    <h3>Career path</h3>
+    <p class="timeline-tip">Select a role to see what I did there.</p>
+    <!-- EDIT ME: newest job first. Each role is a <details> block:
+         the <summary> is what shows, the <ul> list opens on click. -->
+    <ol class="timeline">
+      <li class="is-now">
+        <details class="role">
+          <summary>
+            <span class="timeline-role">Assistant Learning, Talent and Capabilities Strategist</span>
+            <span class="timeline-place">Vanderbilt University, Nashville, TN</span>
+            <span class="timeline-dates">April 2026 to November 2026</span>
+          </summary>
+          <ul class="role-bullets">
+            <li>Ran Anchor's Edge, a monthly professional development series (Manager Monday, Take Off Tuesday, Thrive Thursday), averaging about 60 live attendees and 80 to 90 registrations per session, with a high of 88 live and 125 registered and an NPS of 80+ across 100+ responses.</li>
+            <li>Recruited every Anchor's Edge speaker across all three session types and prepared them with facilitator briefs and run-of-show documents.</li>
+            <li>Created 20+ e-learning modules built in Articulate with Camtasia from Anchor's Edge sessions on professional development and AI topics, extending each session's reach beyond the live audience.</li>
+            <li>Led the rebuild of the Dore to Dore Navigator facilitator certification as a blended train-the-trainer program across in-person and self-paced formats; re-engaged prior cohorts of 20 to 25 Navigators each, with 20 recommitting to stay active.</li>
+            <li>Designed and built e-learning in Articulate Storyline 360 and Rise 360, writing storyboards and scripts, adding knowledge checks and assessments, and building to accessibility standards with captions and alt text.</li>
+            <li>Developed compliance training that translates policy requirements into clear, practical learning.</li>
+            <li>Audited courses in the institutional library for accuracy, consistency, accessibility, and outdated sources, and curated OpenSesame and LinkedIn Learning content.</li>
+            <li>Conducted needs assessment for the HCM Operational Excellence initiative through surveys and focus groups, translating findings into training priorities.</li>
+            <li>Administered CultureAmp performance reviews, including review-phase setup, user provisioning, and training others; coordinated vendor partners such as SparkWise and joined vendor interview calls.</li>
+            <li>Managed projects with Monday.com project plans, a RAID log, and regular status updates to leadership, and used Claude to accelerate design and development.</li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="role">
+          <summary>
+            <span class="timeline-role">HR Coordinator, Workforce Optimization and Strategy</span>
+            <span class="timeline-place">Vanderbilt University, Nashville, TN</span>
+            <span class="timeline-dates">May 2024 to April 2026</span>
+          </summary>
+          <ul class="role-bullets">
+            <li>Began facilitating Vanderbilt Voyage, the university's new employee experience, in February 2025, delivering 2 to 3 sessions a month to 30 to 50 new hires each (40+ sessions and 1,200+ new hires in total) with an NPS of 75 to 80 and about 75 percent survey response.</li>
+            <li>Helped redesign People, Culture and Belonging onboarding from Day 2 through the first 30, 60, and 90 days.</li>
+            <li>Coordinated and facilitated onboarding for hundreds of employees a year across hospitals, walk-in clinics, and campus locations, completing I-9 verification through HireRight and maintaining personnel files.</li>
+            <li>Contributed to Project Polaris, Vanderbilt's institution-wide job architecture transformation, partnering with 100+ stakeholders to map 800+ staff roles into a skills-based career framework, and helped build the project site with FAQs and launch information.</li>
+            <li>Managed the university's unemployment claims function as primary liaison to a third-party administrator: 239 claims, 91.9% win rate versus an 85% benchmark, 96.23% compliance, and $148,961 in liability removed.</li>
+            <li>Managed the rollout of an employee recognition program and led employee trainings on using Vanderbilt's education benefit services.</li>
+            <li>Identified functionality problems in a large-scale workflow and engineered an automated solution that improved processing accuracy and scalability.</li>
+            <li>Tracked background screening in Smartsheet, handled employee inquiries through the HR ticketing system, supported employee relations documentation, and supported open enrollment benefits events.</li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="role">
+          <summary>
+            <span class="timeline-role">HR Learning Coordinator</span>
+            <span class="timeline-place">HCA Healthcare, Nashville, TN</span>
+            <span class="timeline-dates">March 2022 to May 2024</span>
+          </summary>
+          <ul class="role-bullets">
+            <li>Trained every incoming recruiter on the organization's two recruiting systems through monthly hands-on sessions.</li>
+            <li>Produced rollout training on BrightHire, an AI interview and phone screening platform, for about 200 recruiters across six divisional sessions, including piloting and testing, scheduling, slides, live tech, recordings, and job aids.</li>
+            <li>Produced quarterly all-hands meetings on Webex for the entire HR division, owning run-of-show, speaker prep, live Q&amp;A moderation, polls, and recordings.</li>
+            <li>Set up, published, and maintained courses in HealthStream, including SCORM packages, and managed enrollments, completion tracking, and reporting.</li>
+            <li>Built e-learning modules in Articulate 360 to support HR and recruiting training.</li>
+            <li>Coordinated a recruiter program for new graduates, managing flights, hotels, activities, and speakers.</li>
+            <li>Helped manage the HR team's SharePoint site, including content, document libraries, layout, and permissions.</li>
+          </ul>
+        </details>
+      </li>
+    </ol>
+
+    <!-- EDIT ME: to update the resume, replace files/Michael-Payne-Resume.pdf
+         with a new PDF of the same name -->
+    <p class="resume-link">
+      <a class="button button-quiet" href="files/Michael-Payne-Resume.pdf" download>Download my resume (PDF, 2 pages)</a>
+    </p>
+  </section>
+
+
+  <!-- ====================================================
+       MODULE 2: BY THE NUMBERS
+       ==================================================== -->
+  <section class="lesson" id="numbers" aria-labelledby="numbers-title"
+           data-module="Module 2 of 6: By the numbers" data-title="By the numbers">
+    <p class="eyebrow">Module 2 &middot; A 30-second read</p>
+    <h2 id="numbers-title">By the numbers</h2>
+    <p class="lead">The headline results from the programs I ran, facilitated and built.</p>
+
+    <!-- EDIT ME: each stat is one <li class="stat"> block.
+         Keep "approx." on any number that is an estimate. -->
+    <h3 class="visually-hidden">Headline results</h3>
+    <ul class="stats stats-headline">
+      <li class="stat">
+        <span class="stat-number">1,200+</span>
+        <span class="stat-label">new hires welcomed through Vanderbilt Voyage</span>
+        <span class="stat-note">approx. &middot; February 2025 to November 2026</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">80+</span>
+        <span class="stat-label">NPS for Anchor's Edge</span>
+        <span class="stat-note">from 100+ survey responses</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">75 to 80</span>
+        <span class="stat-label">NPS for Vanderbilt Voyage</span>
+        <span class="stat-note">about 75% of attendees respond</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">e-learning modules built in Articulate with Camtasia</span>
+        <span class="stat-note">approx. &middot; from Anchor's Edge sessions</span>
+      </li>
+    </ul>
+
+    <h3>Reach and scale</h3>
+    <ul class="stats">
+      <li class="stat">
+        <span class="stat-number">40+</span>
+        <span class="stat-label">Vanderbilt Voyage sessions facilitated</span>
+        <span class="stat-note">approx. &middot; 30 to 50 new hires each</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">30+</span>
+        <span class="stat-label">Anchor's Edge sessions</span>
+        <span class="stat-note">approx. &middot; since January 2026</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">About 60</span>
+        <span class="stat-label">live attendees per Anchor's Edge session</span>
+        <span class="stat-note">80 to 90 registered &middot; record: 88 live, 125 registered</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">About 200</span>
+        <span class="stat-label">recruiters trained on BrightHire</span>
+        <span class="stat-note">six divisional sessions at HCA Healthcare</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">800+</span>
+        <span class="stat-label">staff roles mapped to a skills-based framework</span>
+        <span class="stat-note">Project Polaris, as a contributor, with 100+ stakeholders</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">20</span>
+        <span class="stat-label">Navigators recommitted after my outreach</span>
+        <span class="stat-note">Dore to Dore Navigator Program</span>
+      </li>
+    </ul>
+
+    <h3>Other impact: HR operations</h3>
+    <p>
+      As an HR Coordinator at Vanderbilt, I managed the university's unemployment claims
+      function as primary liaison to a third-party administrator.
+    </p>
+    <ul class="stats stats-small">
+      <li class="stat">
+        <span class="stat-number">239</span>
+        <span class="stat-label">claims managed</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">91.9%</span>
+        <span class="stat-label">win rate</span>
+        <span class="stat-note">vs. an 85% industry benchmark</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">96.23%</span>
+        <span class="stat-label">compliance</span>
+      </li>
+      <li class="stat">
+        <span class="stat-number">$148,961</span>
+        <span class="stat-label">in liability removed</span>
+      </li>
+    </ul>
+
+    <div class="card takeaway">
+      <p class="card-heading">Key takeaway</p>
+      <p>
+        My programs reach big audiences, and people rate them highly: an NPS of 75 to 80+
+        across both flagship programs. Up next, the case studies show how I got there.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       MODULE 3: PROGRAM CASE STUDIES
+       ==================================================== -->
+  <section class="lesson" id="anchors-edge" aria-labelledby="anchors-edge-title"
+           data-module="Module 3 of 6: Program case studies" data-title="Anchor's Edge">
+    <p class="eyebrow">Module 3 &middot; Case study 1 of 4</p>
+    <h2 id="anchors-edge-title">Anchor's Edge</h2>
+    <p class="lead">
+      A monthly professional development series at Vanderbilt with three session types:
+      Manager Monday, Take Off Tuesday and Thrive Thursday.
+    </p>
+
+    <ul class="case-glance">
+      <li><strong>80+</strong> NPS</li>
+      <li><strong>About 60</strong> live per session</li>
+      <li><strong>30+</strong> sessions (approx.)</li>
+    </ul>
+
+    <!-- EDIT ME: case study sections (Challenge is optional; leave it out when there wasn't one) -->
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">1</span> My Role</h3>
+      <p>
+        Anchor's Edge was already running when I joined the team supporting it in January
+        2026. I went on to run it, and from March 2026 I recruited every speaker for all three
+        session types.
+      </p>
+      <p>
+        My focus was continuity: three session types every month, each with its own speaker,
+        and no drop in quality through the handoff.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">2</span> The Approach</h3>
+      <ul class="approach-list">
+        <li><strong>Plan months ahead.</strong> I planned sessions a few months out, so speakers had time to prepare.</li>
+        <li><strong>Coach every presenter.</strong> Before each session, I offered consulting to help presenters generate ideas, practice and build their content.</li>
+        <li><strong>Set them up for the day.</strong> Each speaker got a facilitator brief and a run-of-show document.</li>
+        <li><strong>Extend the reach.</strong> I turned sessions into on-demand e-learning modules, built in Articulate with Camtasia, so people who missed the live session could still learn.</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">3</span> The Results</h3>
+      <ul class="stats stats-results">
+        <li class="stat">
+          <span class="stat-number">80+</span>
+          <span class="stat-label">NPS</span>
+          <span class="stat-note">from 100+ survey responses</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">About 60</span>
+          <span class="stat-label">live attendees per session</span>
+          <span class="stat-note">80 to 90 registered</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">88 / 125</span>
+          <span class="stat-label">record session</span>
+          <span class="stat-note">live / registered</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">sessions</span>
+          <span class="stat-note">approx. &middot; since January 2026</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">e-learning modules</span>
+          <span class="stat-note">approx. &middot; built from sessions, mostly on professional development and AI</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lesson" id="voyage" aria-labelledby="voyage-title"
+           data-module="Module 3 of 6: Program case studies" data-title="Vanderbilt Voyage">
+    <p class="eyebrow">Module 3 &middot; Case study 2 of 4</p>
+    <h2 id="voyage-title">Vanderbilt Voyage</h2>
+    <p class="lead">
+      Vanderbilt University's new employee experience. I facilitated it; I didn't design it.
+    </p>
+
+    <ul class="case-glance">
+      <li><strong>1,200+</strong> new hires (approx.)</li>
+      <li><strong>75 to 80</strong> NPS</li>
+      <li><strong>40+</strong> sessions (approx.)</li>
+    </ul>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">1</span> The Challenge</h3>
+      <p>
+        Every Voyage room was a mix. People from security, dining and exempt roles sat side
+        by side, with different backgrounds, education and jobs. Sometimes there was a
+        language barrier too. One session had to work for all of them.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">2</span> My Role</h3>
+      <p>
+        I facilitated Vanderbilt Voyage from February 2025 to November 2026, leading 2 to 3
+        sessions a month for 30 to 50 new hires each.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">3</span> The Approach</h3>
+      <ul class="approach-list">
+        <li><strong>Remove barriers first.</strong> I made sure every learner had what they needed to succeed, including a translator when there was a language barrier.</li>
+        <li><strong>Make it welcoming.</strong> I created a safe space where people felt comfortable taking part, whatever their role or background.</li>
+        <li>
+          <strong>Open with three easy questions.</strong> Everyone met three people and asked them:
+          <ol class="opener-questions">
+            <li>What's your go-to morning drink?</li>
+            <li>What's your favorite restaurant in Nashville?</li>
+            <li>Does pineapple belong on pizza?</li>
+          </ol>
+          Then we came back together and introduced a few people. Anyone new to the city
+          left with food recommendations, and everyone got to know each other a little.
+        </li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">4</span> The Results</h3>
+      <ul class="stats stats-results">
+        <li class="stat">
+          <span class="stat-number">1,200+</span>
+          <span class="stat-label">new hires welcomed</span>
+          <span class="stat-note">approx. &middot; February 2025 to November 2026</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">sessions facilitated</span>
+          <span class="stat-note">approx. &middot; 2 to 3 a month</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">75 to 80</span>
+          <span class="stat-label">NPS</span>
+          <span class="stat-note">about 75% of attendees respond</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">30 to 50</span>
+          <span class="stat-label">new hires per session</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- EDIT ME: real survey comments only, word for word, no names -->
+    <div class="case-section">
+      <h3>In their words</h3>
+      <p class="quotes-source">Comments from Vanderbilt Voyage post-session attendee surveys</p>
+      <ul class="quotes">
+        <li><blockquote><p>Thank you Michael for all the information we received today and the hands on group activities</p></blockquote></li>
+        <li><blockquote><p>Michael did a great job welcoming us and helping with any questions</p></blockquote></li>
+        <li><blockquote><p>Michael made this orientation entertaining and not just talking at us</p></blockquote></li>
+        <li><blockquote><p>Michael did a great job of making us feel special and that we were joining a community</p></blockquote></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lesson" id="navigator" aria-labelledby="navigator-title"
+           data-module="Module 3 of 6: Program case studies" data-title="Dore to Dore Navigator Program">
+    <p class="eyebrow">Module 3 &middot; Case study 3 of 4</p>
+    <h2 id="navigator-title">Dore to Dore Navigator Program</h2>
+    <p class="lead">
+      A program that trains and certifies Vanderbilt staff as volunteer facilitators.
+      I led its rebuild from the ground up.
+    </p>
+
+    <ul class="case-glance">
+      <li><strong>Status:</strong> in design (November 2026)</li>
+      <li><strong>20</strong> Navigators re-engaged</li>
+      <li><strong>5-part</strong> blended pathway</li>
+    </ul>
+
+    <p>
+      Certified Navigators deliver Vanderbilt Voyage and other People, Culture and Belonging
+      programming. They can also guest speak at Voyage, present at Anchor's Edge, join
+      monthly lunch-and-learns, and observe or co-facilitate sessions to stay sharp.
+      Navigators gain facilitation and leadership experience and a campus-wide network.
+      Vanderbilt gets a steady pool of trained facilitators.
+    </p>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">1</span> The Challenge</h3>
+      <ul class="approach-list">
+        <li><strong>No outside certification.</strong> The original model relied on an external ATD certification that was no longer an option.</li>
+        <li><strong>Navigators had drifted.</strong> Many people from Cohorts 1 and 2 had stepped back.</li>
+        <li><strong>Nothing kept them involved.</strong> There was no structured way to keep Navigators engaged after certification, so drop-off from busy workloads was a real risk.</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">2</span> My Role</h3>
+      <p>
+        I owned the rebuild on my own, from July 2026 to November 2026. I wrote the program plan, the
+        standard operating procedure (the step-by-step guide for running it) and a handoff
+        guide, and I led the outreach to bring past Navigators back.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">3</span> The Approach</h3>
+
+      <h4>Why blended</h4>
+      <ul class="approach-list">
+        <li><strong>It fits the budget.</strong> The new model uses tools Vanderbilt already has (Rise, Teams and PowerPoint), at almost no cost beyond facilitator time.</li>
+        <li><strong>It respects busy schedules.</strong> Navigators have full-time jobs. Self-paced content fits around their work, and in-person time is saved for what needs a room: practice, feedback and community.</li>
+      </ul>
+
+      <h4>The new pathway</h4>
+      <ol class="pathway">
+        <li>
+          <span class="pathway-name">Orientation and Foundations</span>
+          <span class="pathway-format">In person &middot; 2.5 hours</span>
+          <span class="pathway-detail">Why the program exists, roles alongside the operations team, how adults learn, planning a session and facilitation presence.</span>
+        </li>
+        <li>
+          <span class="pathway-name">Facilitation Skills</span>
+          <span class="pathway-format">In person &middot; 2.5 hours</span>
+          <span class="pathway-detail">Engagement and questioning, reading the room, inclusive facilitation, difficult moments, feedback and strong closings.</span>
+        </li>
+        <li>
+          <span class="pathway-name">Voyage Content Deep Dive</span>
+          <span class="pathway-format">Self-paced in Rise &middot; about 30 minutes</span>
+          <span class="pathway-detail">Each section of Voyage Day 1, with knowledge checks.</span>
+        </li>
+        <li>
+          <span class="pathway-name">Working session (optional)</span>
+          <span class="pathway-format">In person</span>
+          <span class="pathway-detail">Open office hours to prepare the capstone.</span>
+        </li>
+        <li>
+          <span class="pathway-name">Capstone</span>
+          <span class="pathway-format">In person</span>
+          <span class="pathway-detail">Small groups design and present a learning program from scratch. This earns certification.</span>
+        </li>
+      </ol>
+
+      <h4>Bringing Navigators back</h4>
+      <p>
+        On October 1, 2026, I sent a personal email to everyone from Cohorts 1 and 2 with a
+        short interest survey called "We Want You Back." It was built to:
+      </p>
+      <ul class="approach-list">
+        <li>Invite them to help shape the program's next chapter, not just ask them to return.</li>
+        <li>Welcome everyone, whether they'd stayed active or stepped back.</li>
+        <li>Make coming back easy and low-pressure.</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">4</span> The Results</h3>
+      <ul class="stats stats-results">
+        <li class="stat">
+          <span class="stat-number">20</span>
+          <span class="stat-label">past Navigators recommitted to staying active</span>
+          <span class="stat-note">out of roughly 40 to 50 reached</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">part blended pathway designed</span>
+          <span class="stat-note">in person and self-paced</span>
+        </li>
+      </ul>
+      <p>The program was still in design when I left Vanderbilt in November 2026. I wrote a handoff guide so the work could continue.</p>
+    </div>
+  </section>
+
+  <section class="lesson" id="polaris" aria-labelledby="polaris-title"
+           data-module="Module 3 of 6: Program case studies" data-title="Project Polaris">
+    <p class="eyebrow">Module 3 &middot; Case study 4 of 4</p>
+    <h2 id="polaris-title">Project Polaris</h2>
+    <p class="lead">
+      Vanderbilt's institution-wide job architecture transformation, mapping staff roles
+      into a skills-based career framework.
+    </p>
+
+    <ul class="case-glance">
+      <li><strong>800+</strong> roles mapped</li>
+      <li><strong>100+</strong> stakeholders</li>
+      <li><strong>Status:</strong> launched</li>
+    </ul>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">1</span> My Role</h3>
+      <p>
+        I was a contributor on the project while I was an HR Coordinator at Vanderbilt. I
+        organized the launch meetings and role-mapping sessions, captured what leaders told
+        us, and helped build the project site.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">2</span> The Approach</h3>
+      <ul class="approach-list">
+        <li><strong>Launch meetings.</strong> I scheduled the project launch meetings with stakeholders and built the decks.</li>
+        <li><strong>Role-mapping sessions.</strong> I created and scheduled two-hour sessions with leaders who had similar roles, took notes and organized the findings.</li>
+        <li><strong>Project site.</strong> I helped build the site with FAQs, project details and launch information.</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3><span class="case-step" aria-hidden="true">3</span> The Results</h3>
+      <ul class="stats stats-results">
+        <li class="stat">
+          <span class="stat-number">800+</span>
+          <span class="stat-label">staff roles mapped</span>
+          <span class="stat-note">into a skills-based career framework</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">stakeholders involved</span>
+        </li>
+        <li class="stat">
+          <span class="stat-number">Launched</span>
+          <span class="stat-label">across the institution</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       MODULE 4: HOW I BUILD LEARNING
+       A sample course made for this portfolio. The organization,
+       learners and scenario are made up on purpose.
+       ==================================================== -->
+  <section class="lesson" id="build-needs" aria-labelledby="build-needs-title"
+           data-module="Module 4 of 6: How I build learning" data-title="Step 1: Needs analysis">
+    <p class="eyebrow">Module 4 &middot; Step 1 of 4</p>
+    <h2 id="build-needs-title">Needs analysis</h2>
+    <p class="lead">
+      To show how I design, I built a short sample course from scratch:
+      <strong>Using AI as a Thinking Partner at Work.</strong> This module walks through my
+      process, one step at a time.
+    </p>
+
+    <div class="sample-note">
+      <p class="card-heading">About this sample</p>
+      <p>
+        The organization, learners and scenario are made up for this portfolio. Nothing here
+        comes from any employer's internal content or data.
+      </p>
+    </div>
+
+    <h3>The request</h3>
+    <p>
+      Imagine a leader says, "Our staff need AI training." Before I build anything, I find
+      out what's really going on and what people need to do differently.
+    </p>
+
+    <h3>The learners</h3>
+    <ul class="approach-list">
+      <li>Staff at a large organization in non-technical roles, like coordinators, administrative staff and front-line support.</li>
+      <li>Little or no hands-on experience with AI tools.</li>
+      <li>Busy, with little time for training.</li>
+      <li>A wide mix of comfort levels with technology.</li>
+    </ul>
+
+    <h3>Questions I'd ask</h3>
+    <ul class="approach-list">
+      <li>What should people do differently after this training?</li>
+      <li>Where are people already using AI, and where are they avoiding it?</li>
+      <li>What worries them? Accuracy, privacy, their jobs?</li>
+      <li>What does the organization's AI policy allow?</li>
+      <li>How will we know the training worked?</li>
+    </ul>
+
+    <h3>How I'd gather answers</h3>
+    <ul class="approach-list">
+      <li><strong>A short survey</strong> to see how people use AI today and how confident they feel.</li>
+      <li><strong>Small focus groups</strong> across different roles to hear the real barriers.</li>
+      <li><strong>A policy review</strong> with whoever owns the AI policy, so the training matches the rules.</li>
+      <li><strong>A few real tasks</strong> observed, to see where AI could save time.</li>
+    </ul>
+
+    <h3>What this sample assumes</h3>
+    <p>For this sample, I assumed the needs analysis found that:</p>
+    <ul class="approach-list">
+      <li>Most learners have tried an AI chat tool once or twice but don't use it for real work.</li>
+      <li>They type short, vague requests, get generic answers and give up.</li>
+      <li>Some trust AI answers too much. Others don't trust them at all.</li>
+      <li>Many aren't sure what information is safe to share.</li>
+    </ul>
+
+    <h3>Is training the answer?</h3>
+    <p>
+      Partly. Training builds skill and judgment, but people also need clear rules and a quick
+      reminder on the job. So the sample pairs a short e-learning module with a one-page
+      job aid, and points learners to their organization's AI policy.
+    </p>
+  </section>
+
+  <section class="lesson" id="build-objectives" aria-labelledby="build-objectives-title"
+           data-module="Module 4 of 6: How I build learning" data-title="Step 2: Learning objectives">
+    <p class="eyebrow">Module 4 &middot; Step 2 of 4</p>
+    <h2 id="build-objectives-title">Learning objectives</h2>
+    <p class="lead">
+      Objectives turn the needs into something I can design and measure. Each one names what
+      learners will do, not just what they'll know.
+    </p>
+
+    <div class="card card-dark">
+      <p class="card-heading">After this 5-minute module, learners will be able to:</p>
+      <ol class="objectives">
+        <li>Write a prompt for a work task that includes a role, context, task and format.</li>
+        <li>Check an AI response for errors and made-up details before using it.</li>
+        <li>Decide when information is not safe to share with an AI tool.</li>
+      </ol>
+    </div>
+
+    <h3>How each objective is practiced</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Objective</th><th scope="col">Practice</th><th scope="col">How it's checked</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1. Write a strong prompt</td><td>Screen 3: Pick the better prompt</td><td>Scenario choice with feedback on every option</td></tr>
+          <tr><td>2. Check the response</td><td>Screen 4: Spot the problems</td><td>Select all the lines that need checking</td></tr>
+          <tr><td>3. Protect information</td><td>Screen 5: Safe to share?</td><td>Sort each item, with feedback on each</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Design choices</h3>
+    <ul class="approach-list">
+      <li><strong>Short.</strong> About 5 minutes, because these learners are busy.</li>
+      <li><strong>Practice over reading.</strong> Three of the six screens ask learners to make a decision.</li>
+      <li><strong>One realistic scenario</strong> carries through the whole module, so it feels like real work.</li>
+      <li><strong>Accessible.</strong> Everything works with a keyboard and a screen reader, with no audio or video required.</li>
+    </ul>
+  </section>
+
+  <section class="lesson" id="build-storyboard" aria-labelledby="build-storyboard-title"
+           data-module="Module 4 of 6: How I build learning" data-title="Step 3: Storyboard">
+    <p class="eyebrow">Module 4 &middot; Step 3 of 4</p>
+    <h2 id="build-storyboard-title">Storyboard</h2>
+    <p class="lead">
+      The storyboard is the blueprint. It plans every screen before I build, so reviewers can
+      give feedback while changes are still cheap.
+    </p>
+
+    <div class="table-wrap">
+      <table class="storyboard">
+        <thead>
+          <tr><th scope="col">#</th><th scope="col">Screen</th><th scope="col">On screen</th><th scope="col">Learner does</th><th scope="col">Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Welcome</td><td>Why AI is worth learning, and the three skills they'll practice</td><td>Reads, then selects Next</td><td>Sets expectations and answers "what's in it for me?"</td></tr>
+          <tr><td>2</td><td>The prompt recipe</td><td>Four ingredients: role, context, task and format, with an example of each</td><td>Reads the recipe</td><td>Gives one simple model to remember</td></tr>
+          <tr><td>3</td><td>Pick the better prompt</td><td>Jordan needs a thank-you email. Three possible prompts.</td><td>Chooses one and gets feedback on it</td><td>Practice for objective 1</td></tr>
+          <tr><td>4</td><td>Spot the problems</td><td>The AI's draft email, with three made-up details hidden in it</td><td>Selects every line that needs checking</td><td>Practice for objective 2</td></tr>
+          <tr><td>5</td><td>Safe to share?</td><td>Three pieces of information Jordan might paste in</td><td>Sorts each one: share or don't share</td><td>Practice for objective 3</td></tr>
+          <tr><td>6</td><td>Wrap-up</td><td>The three habits and a one-page job aid</td><td>Reviews the job aid</td><td>Supports learners back on the job</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="lesson" id="build-lesson" aria-labelledby="build-lesson-title"
+           data-module="Module 4 of 6: How I build learning" data-title="Step 4: The finished build">
+    <p class="eyebrow">Module 4 &middot; Step 4 of 4</p>
+    <h2 id="build-lesson-title">The finished build</h2>
+    <p class="lead">Here's the finished sample. Try it the way a learner would.</p>
+
+    <div class="mini" id="mini">
+      <div class="mini-head">
+        <p class="mini-title">Using AI as a Thinking Partner at Work</p>
+        <p class="mini-count" id="mini-count" hidden>Screen 1 of 6</p>
+      </div>
+
+      <!-- Screen 1 -->
+      <section class="mini-screen" aria-labelledby="mini-1">
+        <h3 id="mini-1">Welcome</h3>
+        <p>
+          AI won't do your job for you. Used well, it helps you think faster and get started
+          sooner.
+        </p>
+        <p>In about 5 minutes, you'll practice how to:</p>
+        <ul class="approach-list">
+          <li>Ask AI for exactly what you need.</li>
+          <li>Check what it gives you.</li>
+          <li>Keep private information safe.</li>
+        </ul>
+        <aside class="designer-note"><strong>Designer's note:</strong> Learners see the payoff and the three skills right away, so they know why the next 5 minutes matter.</aside>
+      </section>
+
+      <!-- Screen 2 -->
+      <section class="mini-screen" aria-labelledby="mini-2">
+        <h3 id="mini-2">The prompt recipe</h3>
+        <p>A good prompt has four ingredients:</p>
+        <dl class="recipe">
+          <div><dt>Role</dt><dd>Who should the AI act as? <em>"Act as an experienced event planner."</em></dd></div>
+          <div><dt>Context</dt><dd>What's the situation? <em>"Our 40-person team volunteered at a food bank on Friday."</em></dd></div>
+          <div><dt>Task</dt><dd>What do you need? <em>"Draft a thank-you email to the team."</em></dd></div>
+          <div><dt>Format</dt><dd>What should it look like? <em>"Under 150 words, warm tone, three bullet highlights."</em></dd></div>
+        </dl>
+        <p>
+          Then keep the conversation going. Ask it to shorten the draft, change the tone or give
+          you three options. That's what makes it a thinking partner.
+        </p>
+        <aside class="designer-note"><strong>Designer's note:</strong> One memorable model is easier to use on the job than a long list of tips.</aside>
+      </section>
+
+      <!-- Screen 3 -->
+      <section class="mini-screen" aria-labelledby="mini-3">
+        <h3 id="mini-3">Pick the better prompt</h3>
+        <p>
+          Jordan coordinates events for a 40-person team. After a volunteer day at a local food
+          bank, Jordan needs to send the team a thank-you email.
+        </p>
+        <form class="check" data-type="single" data-answer="c">
+          <fieldset>
+            <legend>Which prompt will get Jordan the most useful first draft?</legend>
+            <label class="choice"><input type="radio" name="mini-prompt" value="a" id="mini-prompt-a"> "Write an email."</label>
+            <label class="choice"><input type="radio" name="mini-prompt" value="b" id="mini-prompt-b"> "Write a thank-you email to my team about our volunteer day. Make it good."</label>
+            <label class="choice"><input type="radio" name="mini-prompt" value="c" id="mini-prompt-c"> "Act as an experienced event planner. Our 40-person team volunteered at a food bank on Friday and packed 600 meal kits. Draft a warm thank-you email under 150 words, with three bullet highlights."</label>
+          </fieldset>
+          <button type="submit" class="button">Check my answer</button>
+          <p class="check-error" hidden>Choose an answer first.</p>
+          <div class="check-feedback" aria-live="polite">
+            <p class="option-feedback is-wrong" data-for="a" hidden><strong>Not quite.</strong> There's no context, so the AI has to guess who the email is for and what happened. Expect something generic.</p>
+            <p class="option-feedback is-wrong" data-for="b" hidden><strong>Closer.</strong> It names the task and the audience, but "make it good" doesn't say what good looks like. Add the details and a format.</p>
+            <p class="option-feedback is-right" data-for="c" hidden><strong>Correct!</strong> It has all four ingredients: a role, context, a task and a format.</p>
+          </div>
+        </form>
+        <aside class="designer-note"><strong>Designer's note:</strong> Every option gets its own feedback, so even a wrong answer teaches something.</aside>
+      </section>
+
+      <!-- Screen 4 -->
+      <section class="mini-screen" aria-labelledby="mini-4">
+        <h3 id="mini-4">Spot the problems</h3>
+        <p>
+          Here's the draft the AI wrote. Jordan only told it about the team, the food bank and
+          the 600 meal kits.
+        </p>
+        <form class="check" data-type="multi" data-answer="3,4,5">
+          <fieldset>
+            <legend>Before Jordan sends it, which lines need checking? Select all that apply.</legend>
+            <label class="choice"><input type="checkbox" name="mini-lines" value="1" id="mini-line-1"> "Hi team, thank you for showing up for our community on Friday!"</label>
+            <label class="choice"><input type="checkbox" name="mini-lines" value="2" id="mini-line-2"> "Together, we packed 600 meal kits for families in need."</label>
+            <label class="choice"><input type="checkbox" name="mini-lines" value="3" id="mini-line-3"> "That's enough to feed every family in the county for a month."</label>
+            <label class="choice"><input type="checkbox" name="mini-lines" value="4" id="mini-line-4"> "Special thanks to the Events Committee for planning the day."</label>
+            <label class="choice"><input type="checkbox" name="mini-lines" value="5" id="mini-line-5"> "Our next volunteer day is March 14."</label>
+          </fieldset>
+          <button type="submit" class="button">Check my answer</button>
+          <p class="check-error" hidden>Select at least one line first.</p>
+          <div class="check-feedback" aria-live="polite">
+            <p class="check-summary" hidden></p>
+            <p class="option-feedback" data-for="1" hidden><strong>Line 1 is fine.</strong> It matches what Jordan shared.</p>
+            <p class="option-feedback" data-for="2" hidden><strong>Line 2 is fine.</strong> Jordan gave the AI that number.</p>
+            <p class="option-feedback" data-for="3" hidden><strong>Line 3 needs checking.</strong> The AI made up a big claim. It sounds confident, but nobody gave it that fact.</p>
+            <p class="option-feedback" data-for="4" hidden><strong>Line 4 needs checking.</strong> Jordan never mentioned an Events Committee. The AI filled the gap with a guess.</p>
+            <p class="option-feedback" data-for="5" hidden><strong>Line 5 needs checking.</strong> The AI invented a date. Check every name, number and date before you send.</p>
+          </div>
+        </form>
+        <aside class="designer-note"><strong>Designer's note:</strong> The made-up details sound believable on purpose. That's what AI mistakes look like in real life.</aside>
+      </section>
+
+      <!-- Screen 5 -->
+      <section class="mini-screen" aria-labelledby="mini-5">
+        <h3 id="mini-5">Safe to share?</h3>
+        <p>Jordan wants help with next year's volunteer day. Should Jordan paste each of these into an AI tool?</p>
+        <form class="check" data-type="sort">
+          <fieldset class="sort-item" data-answer="share">
+            <legend>The food bank's public address and website</legend>
+            <label class="choice choice-inline"><input type="radio" name="mini-sort-1" value="share" id="mini-sort-1-share"> Share</label>
+            <label class="choice choice-inline"><input type="radio" name="mini-sort-1" value="dont" id="mini-sort-1-dont"> Don't share</label>
+            <p class="option-feedback" hidden><strong>Share.</strong> This is already public.</p>
+          </fieldset>
+          <fieldset class="sort-item" data-answer="dont">
+            <legend>A coworker's medical reason for missing the event</legend>
+            <label class="choice choice-inline"><input type="radio" name="mini-sort-2" value="share" id="mini-sort-2-share"> Share</label>
+            <label class="choice choice-inline"><input type="radio" name="mini-sort-2" value="dont" id="mini-sort-2-dont"> Don't share</label>
+            <p class="option-feedback" hidden><strong>Don't share.</strong> Health information is private and isn't needed for the task.</p>
+          </fieldset>
+          <fieldset class="sort-item" data-answer="dont">
+            <legend>A spreadsheet of volunteers' home addresses and phone numbers</legend>
+            <label class="choice choice-inline"><input type="radio" name="mini-sort-3" value="share" id="mini-sort-3-share"> Share</label>
+            <label class="choice choice-inline"><input type="radio" name="mini-sort-3" value="dont" id="mini-sort-3-dont"> Don't share</label>
+            <p class="option-feedback" hidden><strong>Don't share.</strong> That's personal contact information. Ask the AI for a template instead and fill in the details yourself.</p>
+          </fieldset>
+          <button type="submit" class="button">Check my answers</button>
+          <p class="check-error" hidden>Sort all three items first.</p>
+          <div class="check-feedback" aria-live="polite">
+            <p class="check-summary" hidden></p>
+          </div>
+        </form>
+        <p class="tip">Always follow your organization's AI policy. When in doubt, leave it out.</p>
+        <aside class="designer-note"><strong>Designer's note:</strong> The third item shows a safe alternative, so learners leave with a "do this instead," not just a "don't."</aside>
+      </section>
+
+      <!-- Screen 6 -->
+      <section class="mini-screen" aria-labelledby="mini-6">
+        <h3 id="mini-6">Wrap-up</h3>
+        <p>You practiced three habits. Keep this job aid handy.</p>
+        <div class="job-aid">
+          <p class="job-aid-title">Job aid: AI as a thinking partner</p>
+          <ol>
+            <li><strong>Ask with the recipe.</strong> Role, context, task, format. Then keep the conversation going.</li>
+            <li><strong>Check before you use.</strong> Verify every fact, name, number and date.</li>
+            <li><strong>Protect private information.</strong> Follow your AI policy. When in doubt, leave it out.</li>
+          </ol>
+        </div>
+        <aside class="designer-note"><strong>Designer's note:</strong> The job aid supports learners after the training ends, which is where behavior change actually happens.</aside>
+      </section>
+
+      <div class="mini-nav" id="mini-nav" hidden>
+        <button type="button" class="button button-quiet" id="mini-back">Previous screen</button>
+        <button type="button" class="button" id="mini-next">Next screen</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       MODULE 5: KNOWLEDGE CHECK
+       EDIT ME: each question is one <form class="check quiz-q">.
+       data-answer is the value of the correct choice.
+       ==================================================== -->
+  <section class="lesson" id="knowledge-check" aria-labelledby="knowledge-check-title"
+           data-module="Module 5 of 6: Knowledge check" data-title="Knowledge check">
+    <p class="eyebrow">Module 5 &middot; 5 questions</p>
+    <h2 id="knowledge-check-title">Knowledge check</h2>
+    <p class="lead">How well do you know Michael now? Answer each question to see how you did.</p>
+
+    <form class="check quiz-q" data-type="single" data-answer="c">
+      <fieldset>
+        <legend>1. About how many new hires did Michael welcome through Vanderbilt Voyage?</legend>
+        <label class="choice"><input type="radio" name="q1" value="a" id="q1-a"> About 300</label>
+        <label class="choice"><input type="radio" name="q1" value="b" id="q1-b"> About 700</label>
+        <label class="choice"><input type="radio" name="q1" value="c" id="q1-c"> 1,200+</label>
+        <label class="choice"><input type="radio" name="q1" value="d" id="q1-d"> 5,000+</label>
+      </fieldset>
+      <button type="submit" class="button">Check my answer</button>
+      <p class="check-error" hidden>Choose an answer first.</p>
+      <div class="check-feedback" aria-live="polite">
+        <p class="option-feedback is-right" data-for="right" hidden><strong>Correct!</strong> 1,200+ new hires (approx.) across 40+ sessions.</p>
+        <p class="option-feedback is-wrong" data-for="wrong" hidden><strong>Not quite.</strong> It's 1,200+ new hires (approx.) across 40+ sessions.</p>
+      </div>
+    </form>
+
+    <form class="check quiz-q" data-type="single" data-answer="c">
+      <fieldset>
+        <legend>2. Which of these is not an Anchor's Edge session?</legend>
+        <label class="choice"><input type="radio" name="q2" value="a" id="q2-a"> Manager Monday</label>
+        <label class="choice"><input type="radio" name="q2" value="b" id="q2-b"> Take Off Tuesday</label>
+        <label class="choice"><input type="radio" name="q2" value="c" id="q2-c"> Workshop Wednesday</label>
+        <label class="choice"><input type="radio" name="q2" value="d" id="q2-d"> Thrive Thursday</label>
+      </fieldset>
+      <button type="submit" class="button">Check my answer</button>
+      <p class="check-error" hidden>Choose an answer first.</p>
+      <div class="check-feedback" aria-live="polite">
+        <p class="option-feedback is-right" data-for="right" hidden><strong>Correct!</strong> Workshop Wednesday is made up. The real three are Manager Monday, Take Off Tuesday and Thrive Thursday.</p>
+        <p class="option-feedback is-wrong" data-for="wrong" hidden><strong>Not quite.</strong> That one's real. Workshop Wednesday is the made-up session.</p>
+      </div>
+    </form>
+
+    <form class="check quiz-q" data-type="single" data-answer="b">
+      <fieldset>
+        <legend>3. Which question did Michael use to open Voyage sessions?</legend>
+        <label class="choice"><input type="radio" name="q3" value="a" id="q3-a"> What's your five-year plan?</label>
+        <label class="choice"><input type="radio" name="q3" value="b" id="q3-b"> Does pineapple belong on pizza?</label>
+        <label class="choice"><input type="radio" name="q3" value="c" id="q3-c"> What's your biggest fear at work?</label>
+        <label class="choice"><input type="radio" name="q3" value="d" id="q3-d"> What's your star sign?</label>
+      </fieldset>
+      <button type="submit" class="button">Check my answer</button>
+      <p class="check-error" hidden>Choose an answer first.</p>
+      <div class="check-feedback" aria-live="polite">
+        <p class="option-feedback is-right" data-for="right" hidden><strong>Correct!</strong> Along with "What's your go-to morning drink?" and "What's your favorite restaurant in Nashville?"</p>
+        <p class="option-feedback is-wrong" data-for="wrong" hidden><strong>Not quite.</strong> It was "Does pineapple belong on pizza?" Easy questions get a room talking fast.</p>
+      </div>
+    </form>
+
+    <form class="check quiz-q" data-type="single" data-answer="c">
+      <fieldset>
+        <legend>4. What NPS did Anchor's Edge earn?</legend>
+        <label class="choice"><input type="radio" name="q4" value="a" id="q4-a"> 25+</label>
+        <label class="choice"><input type="radio" name="q4" value="b" id="q4-b"> 50+</label>
+        <label class="choice"><input type="radio" name="q4" value="c" id="q4-c"> 80+</label>
+        <label class="choice"><input type="radio" name="q4" value="d" id="q4-d"> It wasn't measured</label>
+      </fieldset>
+      <button type="submit" class="button">Check my answer</button>
+      <p class="check-error" hidden>Choose an answer first.</p>
+      <div class="check-feedback" aria-live="polite">
+        <p class="option-feedback is-right" data-for="right" hidden><strong>Correct!</strong> 80+, based on 100+ survey responses.</p>
+        <p class="option-feedback is-wrong" data-for="wrong" hidden><strong>Not quite.</strong> It was 80+, based on 100+ survey responses.</p>
+      </div>
+    </form>
+
+    <form class="check quiz-q" data-type="single" data-answer="b">
+      <fieldset>
+        <legend>5. Which certification did Michael earn in 2026?</legend>
+        <label class="choice"><input type="radio" name="q5" value="a" id="q5-a"> PMP</label>
+        <label class="choice"><input type="radio" name="q5" value="b" id="q5-b"> SHRM-CP</label>
+        <label class="choice"><input type="radio" name="q5" value="c" id="q5-c"> CPTD</label>
+        <label class="choice"><input type="radio" name="q5" value="d" id="q5-d"> PHR</label>
+      </fieldset>
+      <button type="submit" class="button">Check my answer</button>
+      <p class="check-error" hidden>Choose an answer first.</p>
+      <div class="check-feedback" aria-live="polite">
+        <p class="option-feedback is-right" data-for="right" hidden><strong>Correct!</strong> SHRM Certified Professional, earned in 2026.</p>
+        <p class="option-feedback is-wrong" data-for="wrong" hidden><strong>Not quite.</strong> It's the SHRM-CP (SHRM Certified Professional), earned in 2026.</p>
+      </div>
+    </form>
+
+    <div class="quiz-score card" id="quiz-score" aria-live="polite" hidden>
+      <p class="card-heading" id="quiz-score-text"></p>
+      <p>Ready for your certificate? Select Next.</p>
+      <button type="button" class="button button-quiet" id="quiz-retry">Try again</button>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       MODULE 6: COURSE COMPLETION
+       ==================================================== -->
+  <section class="lesson" id="complete" aria-labelledby="complete-title"
+           data-module="Module 6 of 6: Course completion" data-title="Course completion">
+    <p class="eyebrow">Module 6</p>
+    <h2 id="complete-title">Course complete</h2>
+    <p class="lead">Thanks for taking the course. Here's your certificate, and how to reach me.</p>
+
+    <div class="cert-name">
+      <label for="cert-name-input">Add your name to the certificate (optional)</label>
+      <input type="text" id="cert-name-input" autocomplete="name" maxlength="60" placeholder="Your name">
+      <p class="cert-name-note">Your name stays on this page. It isn't saved or sent anywhere.</p>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-kicker">Certificate of completion</p>
+      <p class="cert-line">This certifies that</p>
+      <p class="cert-learner" id="cert-learner">You</p>
+      <p class="cert-line">completed the course</p>
+      <p class="cert-course">Meet Michael Payne</p>
+      <p class="cert-line">and can now describe who Michael is, the programs he built, led and facilitated, and the results they delivered.</p>
+      <div class="cert-foot">
+        <p><span class="cert-sign">Michael Payne</span><span class="cert-label">Course designer</span></p>
+        <p id="cert-date-wrap" hidden><span class="cert-sign" id="cert-date"></span><span class="cert-label">Date completed</span></p>
+      </div>
+    </div>
+
+    <h3>Let's talk</h3>
+    <!-- EDIT ME: contact details (email and LinkedIn only, no phone) -->
+    <ul class="contact">
+      <li><span class="contact-label">Email</span> <a href="mailto:michaeljpayne98@gmail.com">michaeljpayne98@gmail.com</a></li>
+      <li><span class="contact-label">LinkedIn</span> <a href="https://www.linkedin.com/in/michael-payne-trainer">linkedin.com/in/michael-payne-trainer</a></li>
+      <li><span class="contact-label">Location</span> Nashville, TN. Open to relocation and remote roles.</li>
+    </ul>
+    <p><a class="button" href="files/Michael-Payne-Resume.pdf" download>Download my resume (PDF)</a></p>
+
+    <h3>Education and certifications</h3>
+    <ul class="approach-list">
+      <li><strong>M.S., Strategic Communication and Organizational Leadership</strong>, Belmont University</li>
+      <li><strong>B.S., Corporate Communication and Public Relations</strong>, Belmont University</li>
+      <li><strong>SHRM Certified Professional (SHRM-CP)</strong>, 2026</li>
+      <li><strong>Training and Facilitation</strong>, ATD</li>
+      <li><strong>Generative AI for Leaders</strong>, Vanderbilt University</li>
+      <li><strong>Certificate of Non-Profit Leadership</strong>, Belmont University</li>
+      <li><strong>HR Tomorrow Leadership Program</strong>, SHRM Foundation</li>
+    </ul>
+
+    <p><a href="#welcome">Take the course again</a></p>
+  </section>
+
+</main>
+
+
+<!-- ======================================================
+     BACK AND NEXT (shown by the course player)
+     ====================================================== -->
+<nav class="pager" id="pager" aria-label="Lesson navigation" hidden>
+  <div class="pager-inner">
+    <button type="button" class="button button-quiet" id="pager-back">Back</button>
+    <button type="button" class="button pager-next" id="pager-next">Next<span class="pager-hint" id="pager-next-hint"></span></button>
+  </div>
+</nav>
+
+<script src="js/course.js"></script>
+<script src="js/activities.js"></script>
+</body>
+</html>
